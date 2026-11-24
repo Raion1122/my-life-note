@@ -16,6 +16,13 @@ h3{font-size:15px;margin:14px 0 2px}
 .t.on{background:var(--onbg);border-color:transparent}.t.on .b{color:var(--on)}
 .t.off{background:var(--offbg);border-color:transparent}.t.off .b{color:var(--off)}
 .t.warn{background:var(--warnbg);border-color:transparent}.t.warn .b{color:var(--warn)}
+.gw{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin:14px 0}
+.gw .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
+.gw .hd{text-align:center;font-weight:700;font-size:15px;padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.gw .d{color:#1a6dff;font-weight:700;font-size:13px;margin:8px 0 2px}
+.gw .d:first-of-type{margin-top:2px}
+.gw .e{overflow-wrap:anywhere;font-size:14px}
+@media (prefers-color-scheme:dark){.gw .d{color:#8ab4f8}}
 ul{padding-left:1.2em;margin:6px 0}li{margin:4px 0;overflow-wrap:anywhere}
 .warn{color:var(--warn);font-weight:700}.mut{color:var(--muted);font-size:13px}
 .wk{list-style:none;padding:0}.wk li{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--line)}
@@ -70,18 +77,30 @@ a{color:var(--acc)}nav a{display:inline-block;margin:4px 12px 0 0}
 <h2>ポケGO（今日）</h2><ul><li>今日10:00から新イベント「黄昏時の願い」開始（〜11/30(月)20:00）。レイドが入れ替わります。★3は<img class=ti src='sprites/espeon.png' alt='' loading=lazy>エーフィ(太陽スカーフ)・<img class=ti src='sprites/umbreon.png' alt='' loading=lazy>ブラッキー(月スカーフ)、★1は<img class=ti src='sprites/pikachu.png' alt='' loading=lazy>ピカチュウ(太陽冠)・<img class=ti src='sprites/pikachu.png' alt='' loading=lazy>ピカチュウ(月冠)、メガは<img class=ti src='sprites/beedrill-mega.png' alt='' loading=lazy>メガスピアー・<img class=ti src='sprites/houndoom-mega.png' alt='' loading=lazy>メガヘルガー・<img class=ti src='sprites/sableye-mega.png' alt='' loading=lazy>メガヤミラミ・<img class=ti src='sprites/manectric-mega.png' alt='' loading=lazy>メガライボルトに。<img class=ti src='sprites/banette-mega.png' alt='' loading=lazy>メガジュペッタは10:00で終了。★5の<img class=ti src='sprites/cresselia.png' alt='' loading=lazy>クレセリア・<img class=ti src='sprites/darkrai.png' alt='' loading=lazy>ダークライ・<img class=ti src='sprites/tornadus-incarnate.png' alt='' loading=lazy>トルネロス(けしん)は9dbの今日のレイド日程では継続表示（前日情報では10:00終了予定でした→ゲーム内で確認を）。イベント中は捕獲時のほしのすなが2倍（GOパス デラックスで3倍）</li><li>今夜は満月。リングマを夜に進化（アメ100）させると<img class=ti src='sprites/ursaluna.png' alt='' loading=lazy>ガチグマになります（満月の夜のみ）</li><li>火曜のおひろめデイ（毎週10:00〜20:00）は、11/24の対象がポケらく・9dbともに未発表でした→ゲーム内で確認を。この先：11/25(水) 伝説レイドに<img class=ti src='sprites/deoxys.png' alt='' loading=lazy>デオキシス各フォルム復刻＆メガメタグロス登場、18:00〜19:00レイドアワー（デオキシス）／11/26(木) 18:00〜19:00 スポットライトアワー：<img class=ti src='sprites/noibat.png' alt='' loading=lazy>オンバット／11/30(月) マックスマンデー：<img class=ti src='sprites/cryogonal.png' alt='' loading=lazy>フリージオ</li></ul>
 <h2>💼 仕事の予定（グループウェア）</h2>
 <p class=mut>グループウェア（J-Motto）の予定です。</p>
-<h3>坂田</h3><ul>
-<li><b>11/24（火）</b><br>終日 非番<br>10:10-12:30 自衛消防訓練（最終）<br>10:30-12:00 警備打合せ<br>18:00 衛生月報<br>18:00 経費精算書</li>
-<li><b>11/25（水）</b><br>終日 年休</li>
-<li><b>11/26（木）</b><br>10:30-12:00 コンプライアンス教育</li>
-<li><b>11/27（金）</b><br>10:00-翌10:00 ①</li>
-</ul>
-<h3>O氏</h3><ul>
-<li><b>11/24（火）</b><br>10:30 警備長会議<br>14:30-15:30 部内会議（B01）<br>16:00-17:00 現業長会議</li>
-<li><b>11/25（水）</b><br>(AM) 新宿区自衛消防審査会<br>-18:00 三六協定 特別条項適用申請書</li>
-<li><b>11/26（木）</b><br>10:30-12:00 コンプライアンス研修</li>
-<li><b>11/27（金）</b><br>15:30-16:30 新宿A（ハルク）面談（2人）<br>16:30 現業長会議<br>18:30-20:00 部内交流会（新宿A）</li>
-</ul>
+<div class=gw>
+<div class=c>
+<div class=hd>坂田</div>
+<div class=d>11/24（火）</div>
+<div class=e>終日 非番<br>10:10-12:30 自衛消防訓練（最終）<br>10:30-12:00 警備打合せ<br>18:00 衛生月報<br>18:00 経費精算書</div>
+<div class=d>11/25（水）</div>
+<div class=e>終日 年休</div>
+<div class=d>11/26（木）</div>
+<div class=e>10:30-12:00 コンプライアンス教育</div>
+<div class=d>11/27（金）</div>
+<div class=e>10:00-翌10:00 ①</div>
+</div>
+<div class=c>
+<div class=hd>O氏</div>
+<div class=d>11/24（火）</div>
+<div class=e>10:30 警備長会議<br>14:30-15:30 部内会議（B01）<br>16:00-17:00 現業長会議</div>
+<div class=d>11/25（水）</div>
+<div class=e>(AM) 新宿区自衛消防審査会<br>-18:00 三六協定 特別条項適用申請書</div>
+<div class=d>11/26（木）</div>
+<div class=e>10:30-12:00 コンプライアンス研修</div>
+<div class=d>11/27（金）</div>
+<div class=e>15:30-16:30 新宿A（ハルク）面談（2人）<br>16:30 現業長会議<br>18:30-20:00 部内交流会（新宿A）</div>
+</div>
+</div>
 <h2>書き足す</h2><p class=mut>GitHub にログインした状態で開くと、その場で書けます</p><nav><a href='https://github.com/Raion1122/my-life/edit/main/勤務メモ.md'>勤務メモ</a><a href='https://github.com/Raion1122/my-life/edit/main/家族メモ.md'>家族メモ</a><a href='https://github.com/Raion1122/my-life/edit/main/習い事メモ.md'>習い事メモ</a><a href='https://github.com/Raion1122/my-life/edit/main/予定メモ.md'>予定メモ</a><a href='https://github.com/Raion1122/my-life/edit/main/学校メモ.md'>学校メモ</a><a href='https://github.com/Raion1122/my-life/edit/main/お金メモ.md'>お金メモ</a><a href='https://github.com/Raion1122/my-life/edit/main/やること.md'>やること</a></nav>
 <h2>リンク</h2><nav><a href='days/'>これまでの日</a><a href='https://raion1122.github.io/tv-trade-note/'>トレード記録</a><a href='https://raion1122.github.io/pokego-note/'>ポケ活ノート</a></nav>
 </main></body></html>
